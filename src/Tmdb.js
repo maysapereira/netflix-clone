@@ -12,9 +12,9 @@ export default {
     getHomeList: async () => {
         return [
             {
-                slug: 'originais',
+                slug: 'originals',
                 title: 'Originais Netflix',
-                items: await basicFetch(`/discover/tv?with_network=213&${language}&api_key=${API_KEY}`)
+                items: await basicFetch(`/discover/tv?with_networks=213&${language}&api_key=${API_KEY}`)
             },
 
             {
@@ -59,5 +59,25 @@ export default {
                 items: await basicFetch(`/discover/tv?with_genres=&16${language}&api_key=${API_KEY}`)
             }
         ]
+    },
+
+    getTVInfo: async (tvId, type) => {
+        let info = {}
+
+        if(tvId) {
+            switch(type) {
+                case 'movie':
+                    info = await basicFetch(`/movie/${tvId}?${language}&api_key=${API_KEY}`)
+                    break;
+                case 'tv':
+                    info = await basicFetch(`/tv/${tvId}?${language}&api_key=${API_KEY}`)
+                    break;
+                default:
+                    info = null;
+                    break;
+            }
+        }
+
+        return info
     }
 }
