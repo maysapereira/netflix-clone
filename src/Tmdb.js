@@ -13,25 +13,25 @@ export default {
         return [
             {
                 slug: 'originais',
-                title: 'Originais Netflix',
+                tittle: 'Originais Netflix',
                 items: await basicFetch(`/discover/tv?with_network=213&${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'trending',
-                title: 'Recomendados para você',
+                tittle: 'Recomendados para você',
                 items: await basicFetch(`/trending/all/week?${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'top-rated',
-                title: 'Em Alta',
+                tittle: 'Em Alta',
                 items: await basicFetch(`/tv/top_rated?${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'crime',
-                title: 'Criminal',
+                tittle: 'Criminal',
                 items: await basicFetch(`/discover/tv?with_genres=&80${language}&api_key=${API_KEY}`)
             },
 
