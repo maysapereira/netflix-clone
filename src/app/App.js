@@ -62,6 +62,13 @@ export default () => {
                    <TVRow key={key} title={item.title} items={item.items} />
                 ))}
             </section>
+
+            <footer>
+                Feito por Maysa Pereira<br/>
+                Direitos de imagem para Netflix<br/>
+                Dados do site TheMovieDB.org
+            </footer>
+
         </div>
     )
 }
