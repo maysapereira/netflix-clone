@@ -1,10 +1,10 @@
 import React from 'react'
 import './TVRow.css'
 
-export default () => {
+export default ({title, items}) => {
     return (
         <div>
-            Lista do filme
+            <h2>{title}</h2>
         </div>
     )
 }

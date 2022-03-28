@@ -13,49 +13,49 @@ export default {
         return [
             {
                 slug: 'originais',
-                tittle: 'Originais Netflix',
+                title: 'Originais Netflix',
                 items: await basicFetch(`/discover/tv?with_network=213&${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'trending',
-                tittle: 'Recomendados para você',
+                title: 'Recomendados para você',
                 items: await basicFetch(`/trending/all/week?${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'top-rated',
-                tittle: 'Em Alta',
+                title: 'Em Alta',
                 items: await basicFetch(`/tv/top_rated?${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'crime',
-                tittle: 'Criminal',
+                title: 'Criminal',
                 items: await basicFetch(`/discover/tv?with_genres=&80${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'mystery',
-                tittle: 'Mistério',
+                title: 'Mistério',
                 items: await basicFetch(`/discover/tv?with_genres=&9648${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'horror',
-                tittle: 'Terror',
+                title: 'Terror',
                 items: await basicFetch(`/discover/tv?with_genres=&27${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'sci-fi',
-                tittle: 'Sci-fi',
+                title: 'Sci-fi',
                 items: await basicFetch(`/discover/tv?with_genres=&878${language}&api_key=${API_KEY}`)
             },
 
             {
                 slug: 'animation',
-                tittle: 'Animação',
+                title: 'Animação',
                 items: await basicFetch(`/discover/tv?with_genres=&16${language}&api_key=${API_KEY}`)
             }
         ]
