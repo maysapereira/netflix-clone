@@ -5,7 +5,7 @@
 .featured--vertical {
     width: inherit;
     height: inherit;
-    background: linear-gradient(to top, #111 10%, transparent 90%)
+    background: linear-gradient(to top, #111 20%, transparent 80%)
 }
 
 .featured--horizontal {
