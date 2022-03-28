@@ -54,9 +54,9 @@ export default {
             },
 
             {
-                slug: 'romance',
-                tittle: 'Romance',
-                items: await basicFetch(`/discover/tv?with_genres=&10749${language}&api_key=${API_KEY}`)
+                slug: 'animation',
+                tittle: 'Animação',
+                items: await basicFetch(`/discover/tv?with_genres=&16${language}&api_key=${API_KEY}`)
             }
         ]
     }
