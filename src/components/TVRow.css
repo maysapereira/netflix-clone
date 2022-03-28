@@ -8,6 +8,7 @@
 
 .tvRow--listarea {
     overflow-x: hidden;
+    padding-left: 30px;
 }
 
 .tvRow--list{
@@ -16,4 +17,10 @@
 
 .tvRow--item {
     display: inline-block;
+    width: 150px;
+}
+
+.tvRow--item img {
+    width: 100%;
+    transform: scale(0.9);
 }
