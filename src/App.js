@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import Tmdb from './Tmdb.js'
-import TVRow from './components/TVRow.js'
-import FeaturedTV from './components/FeaturedTV.js'
+import TVRow from './components/lists/TVRow.js'
+import FeaturedTV from './components/featured/FeaturedTV.js'
 
 export default () => {
 
@@ -31,7 +31,7 @@ export default () => {
 
         <div className='page'>
 
-        {FeaturedData &&
+        {featuredData &&
             <FeaturedTV item={featuredData} />
         }
 
