@@ -18,9 +18,15 @@
 .tvRow--item {
     display: inline-block;
     width: 150px;
+    cursor: pointer;
 }
 
 .tvRow--item img {
     width: 100%;
     transform: scale(0.9);
+    transition: all ease-in-out 0.2s;
+}
+
+.tvRow--item img:hover {
+    transform: scale(1)
 }
